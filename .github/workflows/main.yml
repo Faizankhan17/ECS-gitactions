@@ -65,8 +65,8 @@ jobs:
         ECR_REPOSITORY: image-ecr
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        kubectl apply -f  webapp/deployment.yml
-        kubectl apply -f webapp/service.yml
+        kubectl apply -f  deployment.yml
+        kubectl apply -f  service.yml
 
 
 
