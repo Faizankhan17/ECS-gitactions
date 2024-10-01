@@ -1,22 +1,23 @@
-apiVersion: apps/v1
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: my-app1
-  namespace: default
-  labels:
-    app: my-app1
+  name: regapp-deployment
+  labels: 
+     app: regapp
+ 
 spec:
-  replicas: 1
+  replicas: 2 
   selector:
     matchLabels:
-      app: my-app1
+      app: regapp
+ 
   template:
     metadata:
       labels:
-        app: my-app1
+        app: regapp
     spec:
       containers:
-      - name: my-app1
+      - name: regapp
         image: 536697268429.dkr.ecr.ap-south-1.amazonaws.com/image-ecr
         imagePullPolicy: Always
         ports:
@@ -26,4 +27,3 @@ spec:
     rollingUpdate:
       maxSurge: 1
       maxUnavailable: 1
-~                                
