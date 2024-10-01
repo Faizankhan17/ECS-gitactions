@@ -125,5 +125,5 @@ jobs:
         kubectl rollout restart deployment/regapp-deployment 
 
 
-has context menu
+
  
