@@ -58,7 +58,7 @@ jobs:
         version: v1.31.0
     - name: Update kubeconfig
       run: |
-        aws eks update-kubeconfig --name image-ecr --region ap-south-1
+        aws eks update-kubeconfig --name faizancluster --region ap-south-1
     - name: Deploy to EKS
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
