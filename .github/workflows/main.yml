@@ -50,8 +50,7 @@ jobs:
         #push image to ecr
 
     - name: Push Docker image to ECR
-      run: |
-        docker push 536697268429.dkr.ecr.ap-south-1.amazonaws.com/image-ecr:latest
+      run: docker push 536697268429.dkr.ecr.ap-south-1.amazonaws.com/image-ecr:latest
 
 
 
