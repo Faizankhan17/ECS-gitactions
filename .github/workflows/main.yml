@@ -23,7 +23,7 @@ jobs:
         name: war-file
         path: /home/runner/work/eks-gitaction/eks-gitaction/webapp/target/*.war
     - name: List build directory contents
-      run: ls -la /home/runner/work/project-maven/project-maven/webapp/target
+      run: ls -la /home/runner/work/eks-gitaction/eks-gitaction/webapp/target
 
       # adding aws config...
       
